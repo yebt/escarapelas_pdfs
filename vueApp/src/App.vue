@@ -6,7 +6,7 @@ import html2pdf from 'html2pdf.js'
 import VueEscarapela from './components/VueEscarapela.vue'
 //
 // import allData from './assets/data/data_test_3.json'
-import allData from './assets/data/data_real.json'
+import allData from './assets/data/data_real_2.json'
 //
 const paginatedData = ref([])
 const currentPage = ref(1)
