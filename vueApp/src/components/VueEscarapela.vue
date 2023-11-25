@@ -1,5 +1,5 @@
 <script setup>
-import { computed, watch, ref, onMounted } from 'vue'
+import { computed, watch, ref, onMounted, toRefs } from 'vue'
 import QRCode from 'qrcode'
 
 const props = defineProps({
@@ -13,20 +13,33 @@ const props = defineProps({
   vvirtagHash: String
 })
 
-const { vname, vrole, vrh, vsede, vdocType, vcod } = props
+// const { vname, vrole, vrh, vsede, vdocType, vcod } = props
+const { vname, vrole, vrh, vsede, vdocType, vcod } = toRefs(props)
+
+const capitalizeWords = (strtop) => {
+  strtop = strtop.trim().toLowerCase()
+  return strtop.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+}
 
 const showShortName = computed(() => {
-  const charlimit = 24
-  if (vname.length <= charlimit) {
-    return vname
+  // const lname = capitalizeWords(vname.value)
+  let lname = vname.value
+  if (!lname) {
+    return ''
   }
-  const words = vname.split(' ')
+  lname = capitalizeWords(lname)
+  let cutName = ''
+
+  const charlimit = 24
+  if (lname.length <= charlimit) {
+    return lname
+  }
+  const words = lname.split(' ')
 
   if (words[0].length > charlimit) {
     return words[0].substring(0, charlimit)
   }
 
-  let cutName = ''
   let charCount = 0
   for (const word of words) {
     if (charCount + word.length <= charlimit) {
