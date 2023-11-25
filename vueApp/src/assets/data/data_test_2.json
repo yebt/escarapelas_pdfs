@@ -1,0 +1,42 @@
+[
+    {
+        "mail": " sebastian.mosquera.erazo@correounivalle.edu.co",
+        "name": "aaaaaaaaaaaa",
+        "program_code": "3490",
+        "student_code": "202262913",
+        "document_type": "CÉDULA DE CIUDADANÍA",
+        "document_number": "1114308140",
+        "gender": "Masculino",
+        "gender_identity": "Masculino",
+        "sport": "Fútbol masculino",
+        "sede": "Tuluá",
+        "protein_type": "Animal",
+        "rh": "A+",
+        "allergy": "No",
+        "allergy_description": "No tengo "
+    },
+    {
+        "mail": " sebastian.mosquera.erazo@correounivalle.edu.co",
+        "name": "Sebastián Mosquera Erazo",
+        "program_code": "3490",
+        "student_code": "202262913",
+        "document_type": "CÉDULA DE CIUDADANÍA",
+        "document_number": "1114308140",
+        "gender": "Masculino",
+        "gender_identity": "Masculino",
+        "sport": "Fútbol masculino",
+        "sede": "Palmira",
+        "protein_type": "Animal",
+        "rh": "O+",
+        "allergy": "No",
+        "allergy_description": "No tengo "
+    },
+    {
+        "name": "HECTOR AUGUSTO RODRIGUEZ OREJUELA",
+        "document_number": "10481248",
+        "role": "DIRECCION SEDE PALMIRA",
+        "sede": "PALMIRA",
+        "mail": "DIRECCION.PALMIRA@CORREOUNIVALLE.EDU.CO",
+        "document_type": "CC"
+    }
+]
