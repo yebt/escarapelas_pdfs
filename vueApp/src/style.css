@@ -267,7 +267,7 @@ body {
 
 .title-name {
   position: absolute;
-  bottom: 197px;
+  bottom: 200px;
   /* width: 100%; */
   /* text-align: center; */
   left: 50%;
@@ -278,7 +278,7 @@ body {
 
 .title-description {
   position: absolute;
-  bottom: 174px;
+  bottom: 172px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Roundkey Regular', sans-serif;
@@ -293,7 +293,7 @@ body {
   left: 64%;
   transform: translateX(-50%);
   font-family: 'Roundkey Regular', sans-serif;
-  font-size: calc(12pt*var(--factor));
+  font-size: calc(11pt*var(--factor));
 }
 
 .title-id {
