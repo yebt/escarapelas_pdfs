@@ -55,7 +55,7 @@ const makePdf = async () => {
   const contentToPrint = document.getElementById('contentToPrint')
 
   await html2pdf().set({
-    filename: 'escarapela_' + Date.now() + '.pdf',
+    filename: 'escarapelas_' + currentPage.value + '.pdf',
     image: { type: 'webp', quality: 1 },
     jsPDF: { format: [w * factor, h * factor], orientation: 'landscape' }
   }).from(contentToPrint).save()
