@@ -55,8 +55,8 @@ const showShortName = computed(() => {
 const genQr = () => {
   QRCode.toDataURL(props.vvirtagHash, {
     errorCorrectionLevel: 'H',
-    width: 232,
-    height: 232
+    width: 464,
+    height: 464
   }).then((data) => {
     vqrCode.value = data
   })
