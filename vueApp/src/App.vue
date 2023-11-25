@@ -49,7 +49,7 @@ const makePaginatedData = () => {
 const makePdf = async () => {
   const w = 500
   const h = 300
-  const factor = 2
+  const factor = 1.5
 
   downloadStatus.value = true
   const contentToPrint = document.getElementById('contentToPrint')
