@@ -1,0 +1,242 @@
+[
+    {
+        "type": "blank",
+        "name": "Asistente 1",
+        "document_number": "1000001",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente1-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908d589487"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 2",
+        "document_number": "1000002",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente2-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df1311d"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 3",
+        "document_number": "1000003",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente3-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df13203"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 4",
+        "document_number": "1000004",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente4-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df11900"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 5",
+        "document_number": "1000005",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente5-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df134e7"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 6",
+        "document_number": "1000006",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente6-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df11b91"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 7",
+        "document_number": "1000007",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente7-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df13659"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 8",
+        "document_number": "1000008",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente8-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df1233b"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 9",
+        "document_number": "1000009",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente9-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df12177"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 10",
+        "document_number": "1000010",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente10-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908df121c0"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 11",
+        "document_number": "1000011",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente11-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89bee7"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 12",
+        "document_number": "1000012",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente12-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89c365"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 13",
+        "document_number": "1000013",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente13-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89c2c4"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 14",
+        "document_number": "1000014",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente14-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89ca2a"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 15",
+        "document_number": "1000015",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente15-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89c1f6"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 16",
+        "document_number": "1000016",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente16-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89af0a"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 17",
+        "document_number": "1000017",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente17-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89c9f0"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 18",
+        "document_number": "1000018",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente18-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89cbc9"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 19",
+        "document_number": "1000019",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente19-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908e89c232"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 20",
+        "document_number": "1000020",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente20-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908f2245f2"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 21",
+        "document_number": "1000021",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente21-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908f2251df"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 22",
+        "document_number": "1000022",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente22-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908f2250e7"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 23",
+        "document_number": "1000023",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente23-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908f224f7f"
+    },
+    {
+        "type": "blank",
+        "name": "Asistente 23",
+        "document_number": "1000023",
+        "role": "Asistente",
+        "sede": "NN",
+        "mail": "is-2023-asistente23-temporal@yopmail.com",
+        "document_type": "CC",
+        "virtag_hash": "3c6f908f224f7f"
+    }
+]

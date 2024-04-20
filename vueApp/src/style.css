@@ -84,7 +84,8 @@ body {
   /* background-image: url("./esacapela_mask.jpg"); */
   /* background-image: url("./assets/imgs/esacapela_2.jpg"); */
   /* background-image: url("./assets/imgs/esacapela_mask.jpg"); */
-  background-image: url("./assets/imgs/esacapela_2.jpg");
+  /* background-image: url("./assets/imgs/esacapela_2.jpg"); */
+  background-image: url("./assets/imgs/3enisg_escarapela2.jpg");
   background-size: contain;
   /* background-size: cover; */
   /* border: 1px solid #000;
@@ -92,6 +93,10 @@ body {
   text-align: center;
   width: 10.5cm;
   height: 12.5cm; */
+}
+
+.box.blank {
+  /* background-image: url("./assets/imgs/escapela_asistente.jpg"); */
 }
 
 .floating-button-container {
@@ -103,8 +108,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 200px;
+  width: 250px;
 }
+
 .floating-button-container .informer {
   display: flex;
   width: min-content;
@@ -120,6 +126,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }
+
 .floating-button-container .informer .input {
   width: 50px;
   text-align: center;
@@ -129,8 +136,9 @@ body {
   font-family: monospace;
   font-weight: 700;
   font-size: 15pt;
-  
+
 }
+
 .floating-button-container .button {
   transition: all .2s ease-in-out;
   background-color: #140F2D;
@@ -144,6 +152,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .floating-button-container .button.disabled {
   cursor: not-allowed;
   opacity: 0.9;
@@ -160,15 +169,18 @@ body {
   background-color: #1B4079;
   padding: 10px;
 }
+
 .floating-button-container .button.tick.disabled {
   background-color: #132d53;
   cursor: not-allowed;
   opacity: 0.8;
   pointer-events: none;
 }
+
 .floating-button-container .button.tick:hover {
   background-color: #2559A7;
 }
+
 .floating-button-container .button.tick .svg-icon {
   width: 20px;
   height: 20px;
@@ -240,21 +252,44 @@ body {
   }
 }
 
+/* 'Roundkey Bold.otf' */
+@font-face {
+  font-family: 'Roundkey Bold';
+  src: url('./assets/fonts/Roundkey-Font/Roundkey Bold.otf') format('opentype');
+  font-weight: bold;
+}
+/* 'Roundkey ExtraLight.otf' */
+@font-face {
+  font-family: 'Roundkey ExtraLight';
+  src: url('./assets/fonts/Roundkey-Font/Roundkey ExtraLight.otf') format('opentype');
+  font-weight: 200;
+}
+/* 'Roundkey Light.otf' */
+@font-face {
+  font-family: 'Roundkey Light';
+  src: url('./assets/fonts/Roundkey-Font/Roundkey Light.otf') format('opentype');
+  font-weight: 300;
+}
+/* 'Roundkey Medium.otf' */
 @font-face {
   font-family: 'Roundkey Medium';
-  src: url('./assets/fonts/Roundkey-Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  src: url('./assets/fonts/Roundkey-Font/Roundkey Medium.otf') format('opentype');
+  font-weight: 500;
 }
-
+/* 'Roundkey Regular.otf' */
 @font-face {
   font-family: 'Roundkey Regular';
-  src: url('./assets/fonts/Roundkey-Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  src: url('./assets/fonts/Roundkey-Font/Roundkey Regular.otf') format('opentype');
+  font-weight: 400;
+}
+/* 'Roundkey Thin.otf' */
+@font-face {
+  font-family: 'Roundkey Thin';
+  src: url('./assets/fonts/Roundkey-Font/Roundkey Thin.otf') format('opentype');
+  font-weight: 100;
 }
 
-.spacer {  
+.spacer {
   position: relative;
   /* background: #000; */
   width: 100%;
@@ -267,24 +302,31 @@ body {
 
 .title-name {
   position: absolute;
-  bottom: 200px;
+  top: 270px;
   /* width: 100%; */
   /* text-align: center; */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Roundkey Regular', sans-serif;
-  font-size: calc(25pt*var(--factor));
+  font-size: calc(29pt*var(--factor));
 }
 
 .title-description {
   position: absolute;
-  bottom: 172px;
+  top: 336px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Roundkey Regular', sans-serif;
-  font-size: calc(15pt*var(--factor));
+  font-size: calc(16pt*var(--factor));
 }
-
+.title-role {
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Roundkey Bold', sans-serif;
+  font-size: calc(29pt*var(--factor));
+}
 .title-sede {
   position: absolute;
   bottom: 125px;
@@ -306,6 +348,7 @@ body {
   font-family: 'Roundkey Medium', sans-serif;
   font-size: calc(14pt*var(--factor));
 }
+
 .hidden {
   display: none;
 }

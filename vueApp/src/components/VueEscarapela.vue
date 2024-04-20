@@ -4,22 +4,28 @@ import QRCode from 'qrcode'
 
 const props = defineProps({
   vname: String,
-  vroleType: String,
   vrole: String,
-  vrh: String,
+  vies: String,
   vsede: String,
-  vdocType: String,
-  vcod: String,
   vvirtagHash: String
 })
 
-// const { vname, vrole, vrh, vsede, vdocType, vcod } = props
-const { vname, vrole, vrh, vsede, vdocType, vcod } = toRefs(props)
+const { vname, vrole, vies, vsede, vvirtagHash } = toRefs(props)
 
 const capitalizeWords = (strtop) => {
   strtop = strtop.trim().toLowerCase()
-  return strtop.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+  return strtop
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
 }
+
+const showSede = computed(() => {
+  return capitalizeWords(vsede.value.toLocaleLowerCase())
+})
+const showRol = computed(() => {
+  return capitalizeWords(vrole.value.toLocaleLowerCase())
+})
 
 const showShortName = computed(() => {
   // const lname = capitalizeWords(vname.value)
@@ -53,6 +59,11 @@ const showShortName = computed(() => {
 })
 // make async computed qr
 const genQr = () => {
+  if (!props.vvirtagHash) {
+    console.log(props)
+    vqrCode.value = ''
+    return
+  }
   QRCode.toDataURL(props.vvirtagHash, {
     errorCorrectionLevel: 'H',
     width: 464,
@@ -64,6 +75,7 @@ const genQr = () => {
 watch(
   () => props.vvirtagHash,
   () => {
+    console.log(props.vvirtagHash)
     genQr()
   }
 )
@@ -74,32 +86,55 @@ onMounted(() => {
 })
 </script>
 
-<template >
+<template>
   <div class="box">
-    <img class="svg-logo" src="../assets/imgs/logo_uni.svg" alt="unilogo" />
-
     <div class="spacer">
+      <img
+        class="svg-univalle"
+        src="../assets/imgs/logos/univalle.svg"
+        alt="univalle logo"
+      />
+      <img
+        class="svg-uceva"
+        src="../assets/imgs/logos/uceva.svg"
+        alt="uceva logo"
+      />
+      <img
+        class="svg-uniminuto"
+        src="../assets/imgs/logos/unuminuto.svg"
+        alt="Uniminuto logo"
+      />
+      <img
+        class="svg-remington"
+        src="../assets/imgs/logos/reminton.svg"
+        alt="remington logo"
+      />
+      <img
+        class="svg-reditool"
+        src="../assets/imgs/logos/reditul.svg"
+        alt="reditool logo"
+      />
       <div>
-        <div class="title-name">{{ showShortName }}</div>
-        <div class="title-description">
-          <span>{{vroleType}}:</span> <span>{{ vrole }}</span>
-          <span v-if="vrh">
-            <span> / </span>
-            <span>Rh:</span> <span>{{ vrh }}</span>
+
+        <div  class="title-name">
+          <span v-if="vrole.toLocaleLowerCase() === 'ponente'">{{ showShortName }}</span>
+          <span v-else class="placeholder">
+            <div class="placeholder-name"></div>
           </span>
         </div>
+
+        <div class="title-description">
+          <span>IES:</span> <span>{{ vies }}</span>
+          <span>
+            <span> / </span>
+            <span>Sede:</span> <span>{{ showSede }}</span>
+          </span>
+        </div>
+        <div class="title-role">{{ showRol }}</div>
       </div>
       <div>
-        <div class="title-sede">
-          Sede: <span>{{ vsede }}</span>
-        </div>
-        <div class="title-id">
-          <span>{{ vdocType }}:</span> <span>{{ vcod }}</span>
-        </div>
-      </div>
-      <div>
-        <div class="qr-code">
-          <img :src="vqrCode"  alt="qr"/>
+        <div  class="qr-code">
+          <img :src="vqrCode" alt="qr" />
         </div>
       </div>
     </div>
@@ -107,10 +142,58 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.placeholder-name {
+  width: 440px;
+  height: 54px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.svg-univalle {
+  position: absolute;
+  bottom: 26px;
+  left: 41px;
+  width: 46px;
+  height: 79px;
+}
+.svg-uceva {
+  position: absolute;
+  bottom: 30px;
+  left: 105px;
+  width: 134px;
+  height: auto;
+}
+.svg-uniminuto {
+  position: absolute;
+  bottom: 31px;
+  left: 341px;
+  width: 103px;
+  height: auto;
+}
+.svg-remington {
+  position: absolute;
+  bottom: 25px;
+  left: 460px;
+  width: 118px;
+  height: auto;
+}
+
+.svg-reditool {
+  position: absolute;
+  bottom: 127px;
+  left: 202px;
+  width: 81px;
+  height: auto;
+}
 .qr-code {
   position: absolute;
-  bottom: 34px;
-  left: 95px;
+  bottom: 121px;
+  left: 42px;
   overflow: hidden;
   border-radius: 5%;
   display: flex;
@@ -122,6 +205,6 @@ onMounted(() => {
 }
 .qr-code img {
   /* object-fit: cover; */
-margin:-4px;
+  margin: -4px;
 }
 </style>
